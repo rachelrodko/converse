@@ -152,15 +152,16 @@ li:last-child {
   /* float: left;
   margin: 15px 30px;
   width: 247.5px; */
-  flex-basis: 300px;
-  margin: 20px 20px 0;
+  flex: 1;
+  margin-top: 15px;
 }
 
 .second-col {
-  flex-basis: 300px;
-  margin: 20px 20px 0;
+  flex: 1;
+  margin: 15px 20px 0 0;
 }
 
 .container {
   display: flex;
+  gap: 20px;
 }
