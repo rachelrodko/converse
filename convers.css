@@ -31,10 +31,16 @@ h2::before {
   letter-spacing: 2px;
 }
 
+.price-ship {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .price {
   font-size: 24px;
-  display: inline-block;
   margin: 0 auto 0 0;
+  justify-content: flex-start;
 }
 
 .shipping {
@@ -42,8 +48,7 @@ h2::before {
   font-size: 12px;
   font-weight: bold;
   color: #777;
-  display: inline-block;
-  float: right;
+  justify-content: flex-start;
 }
 
 /* .shipping::after {
@@ -103,16 +108,13 @@ li:last-child {
 .div4,
 .div5,
 .div6 {
-  display: inline-block;
   width: 20px;
   height: 20px;
   border: 0.5px solid black;
-  margin: 5px;
   cursor: pointer;
 }
 
 .div1 {
-  margin-left: 0;
   background-color: black;
 }
 
@@ -135,24 +137,30 @@ li:last-child {
 .div6 {
   background-color: #922ac6;
 }
-/* 
-.colors {
-  margin: 20px 0;
-} */
 
+.colors {
+  display: flex;
+  gap: 10px;
+}
+/* /* 
 .image {
   float: left;
   margin-left: 0;
-}
+} */
 
 .first-col {
-  float: left;
+  /* float: left;
   margin: 15px 30px;
-  width: 247.5px;
+  width: 247.5px; */
+  flex-basis: 300px;
+  margin: 20px 20px 0;
 }
 
 .second-col {
-  margin-top: 15px;
-  float: left;
-  width: 247.5px;
+  flex-basis: 300px;
+  margin: 20px 20px 0;
+}
+
+.container {
+  display: flex;
 }
